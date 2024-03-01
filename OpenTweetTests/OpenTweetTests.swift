@@ -1,9 +1,4 @@
-//
-//  OpenTweetTests.swift
-//  OpenTweetTests
-//
-//  Created by Taeshawit Suwanwigo on 2/29/24.
-//
+//  Created by Taeshawit (Trevis) Suwanwigo on 2/29/24.
 
 import XCTest
 @testable import OpenTweet
