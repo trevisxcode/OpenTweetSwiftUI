@@ -7,10 +7,10 @@ struct FeedView: View {
     NavigationStack {
       ScrollView {
         VStack {
-          TweetView()
-          TweetView()
-          TweetView()
-          TweetView()
+          TweetView(viewModel: .default)
+          TweetView(viewModel: .default)
+          TweetView(viewModel: .default)
+          TweetView(viewModel: .default)
         }
       }
       .navigationTitle("OpenX")

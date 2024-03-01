@@ -17,6 +17,10 @@
 		16F844B52B91B33100FF38D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 16F844B42B91B33100FF38D0 /* README.md */; };
 		16F844B82B91B5C000FF38D0 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844B72B91B5C000FF38D0 /* FeedView.swift */; };
 		16F844BB2B91B71000FF38D0 /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844BA2B91B71000FF38D0 /* TweetView.swift */; };
+		16F844C12B91E04100FF38D0 /* TweetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844C02B91E04100FF38D0 /* TweetEntity.swift */; };
+		16F844C32B91E3D800FF38D0 /* TweetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844C22B91E3D800FF38D0 /* TweetsResponse.swift */; };
+		16F844C52B91E51E00FF38D0 /* TweetDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844C42B91E51E00FF38D0 /* TweetDM.swift */; };
+		16F844C82B91EED600FF38D0 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844C72B91EED600FF38D0 /* TweetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		16F844B42B91B33100FF38D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16F844B72B91B5C000FF38D0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		16F844BA2B91B71000FF38D0 /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		16F844C02B91E04100FF38D0 /* TweetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetEntity.swift; sourceTree = "<group>"; };
+		16F844C22B91E3D800FF38D0 /* TweetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsResponse.swift; sourceTree = "<group>"; };
+		16F844C42B91E51E00FF38D0 /* TweetDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDM.swift; sourceTree = "<group>"; };
+		16F844C72B91EED600FF38D0 /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +110,9 @@
 		16F844862B91B2D700FF38D0 /* OpenTweet */ = {
 			isa = PBXGroup;
 			children = (
-				16F844B92B91B70700FF38D0 /* Tweet */,
-				16F844B62B91B5B600FF38D0 /* Feed */,
+				16F844BF2B91E00400FF38D0 /* Model */,
+				16F844C62B91E65800FF38D0 /* Repository */,
+				16F844BC2B91DFE300FF38D0 /* Modules */,
 				16F844872B91B2D700FF38D0 /* OpenTweetApp.swift */,
 				16F8448B2B91B2D900FF38D0 /* Assets.xcassets */,
 				16F8448D2B91B2D900FF38D0 /* Preview Content */,
@@ -156,8 +165,51 @@
 			isa = PBXGroup;
 			children = (
 				16F844BA2B91B71000FF38D0 /* TweetView.swift */,
+				16F844C72B91EED600FF38D0 /* TweetViewModel.swift */,
 			);
 			path = Tweet;
+			sourceTree = "<group>";
+		};
+		16F844BC2B91DFE300FF38D0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				16F844B92B91B70700FF38D0 /* Tweet */,
+				16F844B62B91B5B600FF38D0 /* Feed */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		16F844BD2B91DFEB00FF38D0 /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				16F844C42B91E51E00FF38D0 /* TweetDM.swift */,
+			);
+			path = DomainModel;
+			sourceTree = "<group>";
+		};
+		16F844BE2B91DFF900FF38D0 /* NetworkEntity */ = {
+			isa = PBXGroup;
+			children = (
+				16F844C02B91E04100FF38D0 /* TweetEntity.swift */,
+				16F844C22B91E3D800FF38D0 /* TweetsResponse.swift */,
+			);
+			path = NetworkEntity;
+			sourceTree = "<group>";
+		};
+		16F844BF2B91E00400FF38D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16F844BE2B91DFF900FF38D0 /* NetworkEntity */,
+				16F844BD2B91DFEB00FF38D0 /* DomainModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16F844C62B91E65800FF38D0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F844B82B91B5C000FF38D0 /* FeedView.swift in Sources */,
+				16F844C82B91EED600FF38D0 /* TweetViewModel.swift in Sources */,
 				16F844BB2B91B71000FF38D0 /* TweetView.swift in Sources */,
+				16F844C32B91E3D800FF38D0 /* TweetsResponse.swift in Sources */,
+				16F844C52B91E51E00FF38D0 /* TweetDM.swift in Sources */,
 				16F844882B91B2D700FF38D0 /* OpenTweetApp.swift in Sources */,
+				16F844C12B91E04100FF38D0 /* TweetEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

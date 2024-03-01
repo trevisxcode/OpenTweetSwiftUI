@@ -3,6 +3,9 @@
 import SwiftUI
 
 struct TweetView: View {
+  
+  @StateObject var viewModel: TweetView.Model
+  
   var body: some View {
     VStack(spacing: .zero) {
       HStack {
@@ -16,12 +19,21 @@ struct TweetView: View {
         }
         VStack {
           HStack {
-            Text("OpenTweet")
+            Text(viewModel.profileName)
               .bold()
+            
+            Group {
+              Text(viewModel.username)
+              Text("·")
+              Text(viewModel.date)
+            }
+            .font(.callout)
+            .foregroundColor(.gray)
+            
             Spacer()
           }
           HStack(spacing: .zero) {
-            Text("Hi! Welcome to your iOS coding excercise. This is a very simple twitter like client. You'll find a json file under Data/ with a short tweet timeline. You are asked to write the app that will display the tweets, similar to what a Twitter client would do.")
+            Text(viewModel.content)
               .multilineTextAlignment(.leading)
               .font(.callout)
             Spacer()
@@ -40,5 +52,5 @@ struct TweetView: View {
 }
 
 #Preview {
-  TweetView()
+  TweetView(viewModel: .default)
 }
