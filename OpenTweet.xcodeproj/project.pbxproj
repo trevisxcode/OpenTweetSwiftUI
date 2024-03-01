@@ -14,6 +14,8 @@
 		16F844992B91B2D900FF38D0 /* OpenTweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844982B91B2D900FF38D0 /* OpenTweetTests.swift */; };
 		16F844A32B91B2D900FF38D0 /* OpenTweetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844A22B91B2D900FF38D0 /* OpenTweetUITests.swift */; };
 		16F844A52B91B2D900FF38D0 /* OpenTweetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844A42B91B2D900FF38D0 /* OpenTweetUITestsLaunchTests.swift */; };
+		16F844B32B91B32A00FF38D0 /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 16F844B22B91B32A00FF38D0 /* timeline.json */; };
+		16F844B52B91B33100FF38D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 16F844B42B91B33100FF38D0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		16F8449E2B91B2D900FF38D0 /* OpenTweetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTweetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F844A22B91B2D900FF38D0 /* OpenTweetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTweetUITests.swift; sourceTree = "<group>"; };
 		16F844A42B91B2D900FF38D0 /* OpenTweetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTweetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16F844B22B91B32A00FF38D0 /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeline.json; sourceTree = "<group>"; };
+		16F844B42B91B33100FF38D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +78,11 @@
 		16F8447B2B91B2D700FF38D0 = {
 			isa = PBXGroup;
 			children = (
-				16F844862B91B2D700FF38D0 /* OpenTweet */,
 				16F844972B91B2D900FF38D0 /* OpenTweetTests */,
+				16F844B12B91B30D00FF38D0 /* Data */,
+				16F844862B91B2D700FF38D0 /* OpenTweet */,
 				16F844A12B91B2D900FF38D0 /* OpenTweetUITests */,
+				16F844B42B91B33100FF38D0 /* README.md */,
 				16F844852B91B2D700FF38D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				16F844A42B91B2D900FF38D0 /* OpenTweetUITestsLaunchTests.swift */,
 			);
 			path = OpenTweetUITests;
+			sourceTree = "<group>";
+		};
+		16F844B12B91B30D00FF38D0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				16F844B22B91B32A00FF38D0 /* timeline.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F844B32B91B32A00FF38D0 /* timeline.json in Resources */,
 				16F8448F2B91B2D900FF38D0 /* Preview Assets.xcassets in Resources */,
+				16F844B52B91B33100FF38D0 /* README.md in Resources */,
 				16F8448C2B91B2D900FF38D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
