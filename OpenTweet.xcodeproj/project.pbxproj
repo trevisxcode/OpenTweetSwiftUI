@@ -16,6 +16,9 @@
 		1624E2AE2B937B4C00D73D26 /* TweetContentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624E2AD2B937B4C00D73D26 /* TweetContentText.swift */; };
 		1624E2B02B937C5B00D73D26 /* TweetContentTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624E2AF2B937C5B00D73D26 /* TweetContentTextModel.swift */; };
 		1624E2B22B937E7400D73D26 /* TweetContentTextModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624E2B12B937E7400D73D26 /* TweetContentTextModelMapper.swift */; };
+		1624E2B62B9398C700D73D26 /* TweetViewModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624E2B52B9398C700D73D26 /* TweetViewModelMapperTests.swift */; };
+		1624E2B92B939E3C00D73D26 /* TweetDetailViewModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624E2B82B939E3C00D73D26 /* TweetDetailViewModelMapperTests.swift */; };
+		1624E2BB2B939EB600D73D26 /* TweetContentTextModelMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624E2BA2B939EB600D73D26 /* TweetContentTextModelMapperTests.swift */; };
 		16F844882B91B2D700FF38D0 /* OpenTweetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F844872B91B2D700FF38D0 /* OpenTweetApp.swift */; };
 		16F8448C2B91B2D900FF38D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F8448B2B91B2D900FF38D0 /* Assets.xcassets */; };
 		16F8448F2B91B2D900FF38D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F8448E2B91B2D900FF38D0 /* Preview Assets.xcassets */; };
@@ -64,6 +67,9 @@
 		1624E2AD2B937B4C00D73D26 /* TweetContentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetContentText.swift; sourceTree = "<group>"; };
 		1624E2AF2B937C5B00D73D26 /* TweetContentTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetContentTextModel.swift; sourceTree = "<group>"; };
 		1624E2B12B937E7400D73D26 /* TweetContentTextModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetContentTextModelMapper.swift; sourceTree = "<group>"; };
+		1624E2B52B9398C700D73D26 /* TweetViewModelMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModelMapperTests.swift; sourceTree = "<group>"; };
+		1624E2B82B939E3C00D73D26 /* TweetDetailViewModelMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewModelMapperTests.swift; sourceTree = "<group>"; };
+		1624E2BA2B939EB600D73D26 /* TweetContentTextModelMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetContentTextModelMapperTests.swift; sourceTree = "<group>"; };
 		16F844842B91B2D700FF38D0 /* OpenTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F844872B91B2D700FF38D0 /* OpenTweetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTweetApp.swift; sourceTree = "<group>"; };
 		16F8448B2B91B2D900FF38D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				16F844982B91B2D900FF38D0 /* OpenTweetTests.swift */,
+				1624E2B52B9398C700D73D26 /* TweetViewModelMapperTests.swift */,
+				1624E2B82B939E3C00D73D26 /* TweetDetailViewModelMapperTests.swift */,
+				1624E2BA2B939EB600D73D26 /* TweetContentTextModelMapperTests.swift */,
 			);
 			path = OpenTweetTests;
 			sourceTree = "<group>";
@@ -471,6 +480,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F844992B91B2D900FF38D0 /* OpenTweetTests.swift in Sources */,
+				1624E2B62B9398C700D73D26 /* TweetViewModelMapperTests.swift in Sources */,
+				1624E2B92B939E3C00D73D26 /* TweetDetailViewModelMapperTests.swift in Sources */,
+				1624E2BB2B939EB600D73D26 /* TweetContentTextModelMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
