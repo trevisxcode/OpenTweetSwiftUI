@@ -19,7 +19,7 @@ struct FeedView: View {
           }
         }
       }
-      .navigationTitle("OpenX")
+      .navigationTitle(viewModel.navigationTitle)
       .task {
         viewModel.fetchTweet()
       }

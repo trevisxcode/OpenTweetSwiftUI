@@ -16,44 +16,54 @@ struct TweetView: View {
           Spacer()
         }
         VStack {
-          HStack(spacing: 4) {
-            Text(viewModel.profileName)
-              .layoutPriority(1)
-              .lineLimit(1)
-              .font(.callout)
-              .bold()
-              .foregroundColor(.white)
-            
-            Group {
-              Text(viewModel.username)
-                .truncationMode(.tail)
-              Text("·")
-              Text(viewModel.date)
-                .layoutPriority(1)
-            }
-            .lineLimit(1)
-            .font(.callout)
-            .foregroundColor(.gray)
-            
-            Spacer()
-          }
-          HStack(spacing: .zero) {
-            TweetContentText(viewModel: viewModel.tweetContentTextModel)
-              .multilineTextAlignment(.leading)
-              .font(.callout)
-              .foregroundColor(.white)
-            Spacer()
-          }
+          authorView
+          contentView
           Spacer()
         }
       }
       .padding([.leading, .trailing], 12)
       .padding([.top, .bottom], 4)
       
-      Rectangle()
-        .fill(Color.gray)
-        .frame(height: 1)
+      divider
     }
+  }
+  
+  private var authorView: some View {
+    HStack(spacing: 4) {
+      Text(viewModel.profileName)
+        .layoutPriority(1)
+        .bold()
+        .foregroundColor(.white)
+      
+      Group {
+        Text(viewModel.username)
+          .truncationMode(.tail)
+        Text("·")
+        Text(viewModel.date)
+          .layoutPriority(1)
+      }
+      .foregroundColor(.gray)
+      
+      Spacer()
+    }
+    .lineLimit(1)
+    .font(.callout)
+  }
+  
+  private var contentView: some View {
+    HStack(spacing: .zero) {
+      TweetContentText(viewModel: viewModel.tweetContentTextModel)
+        .multilineTextAlignment(.leading)
+        .font(.callout)
+        .foregroundColor(.white)
+      Spacer()
+    }
+  }
+  
+  private var divider: some View {
+    Rectangle()
+      .fill(Color.gray)
+      .frame(height: 1)
   }
 }
 

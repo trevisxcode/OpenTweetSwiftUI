@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DFFB477A-EC6E-4D93-8027-B1CC4DC3C195"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OpenTweet/Modules/TweetDetail/TweetDetailViewModelMapper.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "formatDate(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2A712330-3523-4A9F-AB2A-5EAB9752407E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -30,10 +14,57 @@
             filePath = "OpenTweet/Modules/TweetDetail/TweetDetailViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "init(id:profileName:username:content:avatar:inReplyTo:date:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2A712330-3523-4A9F-AB2A-5EAB9752407E - 6ea9d0e7184c191"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpenTweet.TweetDetailView.Model.init(id: Swift.String, profileName: Swift.String, username: Swift.String, content: Swift.String, avatar: Swift.Optional&lt;Foundation.URL&gt;, inReplyTo: Swift.Optional&lt;Swift.String&gt;, date: Swift.String) -&gt; OpenTweet.TweetDetailView.Model"
+                  moduleName = "OpenTweet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/professor/Documents/trevis/workspace/OpenTweet/OpenTweet/Modules/TweetDetail/TweetDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  uuid = "2A712330-3523-4A9F-AB2A-5EAB9752407E - 6ea9d0e7184c191"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpenTweet.TweetDetailView.Model.init(id: Swift.String, profileName: Swift.String, username: Swift.String, content: Swift.String, avatar: Swift.Optional&lt;Foundation.URL&gt;, inReplyTo: Swift.Optional&lt;Swift.String&gt;, date: Swift.String) -&gt; OpenTweet.TweetDetailView.Model"
+                  moduleName = "OpenTweet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/professor/Documents/trevis/workspace/OpenTweet/OpenTweet/Modules/TweetDetail/TweetDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "764">
+               </Location>
+               <Location
+                  uuid = "2A712330-3523-4A9F-AB2A-5EAB9752407E - 6ea9d0e7184c191"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpenTweet.TweetDetailView.Model.init(id: Swift.String, profileName: Swift.String, username: Swift.String, content: Swift.String, avatar: Swift.Optional&lt;Foundation.URL&gt;, inReplyTo: Swift.Optional&lt;Swift.String&gt;, date: Swift.String) -&gt; OpenTweet.TweetDetailView.Model"
+                  moduleName = "OpenTweet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/professor/Documents/trevis/workspace/OpenTweet/OpenTweet/Modules/TweetDetail/TweetDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "740">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

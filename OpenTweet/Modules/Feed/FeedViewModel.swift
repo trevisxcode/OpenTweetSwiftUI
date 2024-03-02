@@ -4,7 +4,12 @@ import Foundation
 
 extension FeedView {
   final class Model: ObservableObject {
+    struct Constant {
+      static let navigationTitle = "OpenX"
+    }
+
     let service = TweetsService()
+    let navigationTitle = Constant.navigationTitle
     @Published private(set) var tweets = [TweetDM]()
     
     func fetchTweet() {

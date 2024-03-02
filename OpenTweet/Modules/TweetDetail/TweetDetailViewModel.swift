@@ -4,16 +4,22 @@ import Foundation
 
 extension TweetDetailView {
   final class Model: ObservableObject {
+    struct Constant {
+      static let navigationTitle = "Post"
+    }
+
+    let navigationTitle = Constant.navigationTitle
     let service = TweetsService()
     
     let id: String
     let profileName: String
     let username: String
-    let content: String
     let avatar: URL?
     let inReplyTo: String?
     let date: String
-    @Published var replyTweets = [TweetDM]()
+    let tweetContentTextModel: TweetContentText.Model
+    
+    @Published private(set) var replyTweets = [TweetDM]()
     
     init(
       id: String,
@@ -27,10 +33,10 @@ extension TweetDetailView {
       self.id = id
       self.profileName = profileName
       self.username = username
-      self.content = content
       self.avatar = avatar
       self.inReplyTo = inReplyTo
       self.date = date
+      self.tweetContentTextModel = TweetContentText.ModelMapper.map(text: content)
     }
     
     func fetchReplyTweets() {
