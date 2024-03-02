@@ -31,10 +31,8 @@ struct TweetDetailView: View {
     VStack {
       VStack {
         HStack {
-          Image(systemName: "person.fill")
+          AsyncImageView(imageUrl: viewModel.avatar)
             .frame(width: 44, height: 44)
-            .foregroundColor(.black)
-            .background(Color.white)
             .clipShape(Circle())
           VStack {
             Text(viewModel.profileName)
