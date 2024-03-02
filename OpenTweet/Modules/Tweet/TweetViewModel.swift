@@ -30,7 +30,6 @@ extension TweetView {
       self.tweetContentTextModel = TweetContentText.ModelMapper.map(text: content)
     }
     
-    
     static func == (lhs: Model, rhs: Model) -> Bool {
       lhs.id == rhs.id &&
       lhs.profileName == rhs.profileName &&
