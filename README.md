@@ -1,9 +1,17 @@
 OpenTweet
 =========
 
-Hi! Welcome to your iOS coding excercise.
+Hey folks at OpenTable! Welcome to my version of OpenTweet (OpenX). 
 
-This is a very simple twitter like client. You'll find a json file under Data/ with a short tweet timeline. You are asked to write the app that will display the tweets, similar to what a Twitter client would do.
+The application is developed with SwiftUI binds with MVVM architecture. You can find the scope of this repository from the described minimum requirement to the bonus features. 
+
+Here's the snapshots of how the complete app looks:
+
+![opentweet-trevis](https://github.com/trevisxcode/OpenTweetSwiftUI/assets/17330548/6af1375b-22f5-42ae-90a8-c74f09cb2c3a)
+
+Architectural Design
+--------------------
+<img width="1120" alt="Screenshot 2024-03-02 at 11 11 39 AM" src="https://github.com/trevisxcode/OpenTweetSwiftUI/assets/17330548/be14fc1d-cdc7-448d-a260-01795aec906a">
 
 A tweet has at the minimum:
 
