@@ -6,7 +6,7 @@ import SwiftUI
 struct OpenTweetApp: App {
   var body: some Scene {
     WindowGroup {
-      FeedView()
+      FeedView(viewModel: FeedView.Model())
         .preferredColorScheme(.dark)
     }
   }

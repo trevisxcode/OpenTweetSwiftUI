@@ -3,21 +3,25 @@
 import SwiftUI
 
 struct FeedView: View {
+  @StateObject var viewModel: FeedView.Model
+  
   var body: some View {
     NavigationStack {
       ScrollView {
         VStack {
-          TweetView(viewModel: .default)
-          TweetView(viewModel: .default)
-          TweetView(viewModel: .default)
-          TweetView(viewModel: .default)
+          ForEach(viewModel.tweetViewModels, id: \.self) { viewModel in
+            TweetView(viewModel: viewModel)
+          }
         }
       }
       .navigationTitle("OpenX")
+      .task {
+        viewModel.fetchTweet()
+      }
     }
   }
 }
 
 #Preview {
-  FeedView()
+  FeedView(viewModel: FeedView.Model())
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B6D0CA90-520B-4EC6-9BD3-353FA2C0DB51"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B0096BB-0EDE-4354-8966-133F2E9A29DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenTweet/Modules/Feed/FeedViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "fetchTweet()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9B0096BB-0EDE-4354-8966-133F2E9A29DB - 1fc8e84d6e2476bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpenTweet.FeedView.Model.fetchTweet() -&gt; ()"
+                  moduleName = "OpenTweet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/professor/Documents/trevis/workspace/OpenTweet/OpenTweet/Modules/Feed/FeedViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "9B0096BB-0EDE-4354-8966-133F2E9A29DB - 79e7daf730bfed45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (OpenTweet.TweetDM) -&gt; OpenTweet.TweetView.Model in OpenTweet.FeedView.Model.fetchTweet() -&gt; ()"
+                  moduleName = "OpenTweet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/professor/Documents/trevis/workspace/OpenTweet/OpenTweet/Modules/Feed/FeedViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

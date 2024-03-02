@@ -18,15 +18,21 @@ struct TweetView: View {
           Spacer()
         }
         VStack {
-          HStack {
+          HStack(spacing: 4) {
             Text(viewModel.profileName)
+              .layoutPriority(1)
+              .lineLimit(1)
+              .font(.callout)
               .bold()
             
             Group {
               Text(viewModel.username)
+                .truncationMode(.tail)
               Text("·")
               Text(viewModel.date)
+                .layoutPriority(1)
             }
+            .lineLimit(1)
             .font(.callout)
             .foregroundColor(.gray)
             
