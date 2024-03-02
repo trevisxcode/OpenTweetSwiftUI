@@ -8,5 +8,5 @@ struct TweetEntity: Codable {
   let content: String
   let avatar: URL?
   let inReplyTo: String?
-  let date: Date
+  let date: String
 }
