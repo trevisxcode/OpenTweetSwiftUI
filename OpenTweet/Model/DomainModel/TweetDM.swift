@@ -2,7 +2,7 @@
 
 import Foundation
 
-struct TweetDM {
+struct TweetDM: Hashable {
   let id: String
   let author: String
   let content: String

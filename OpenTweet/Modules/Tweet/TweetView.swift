@@ -24,6 +24,7 @@ struct TweetView: View {
               .lineLimit(1)
               .font(.callout)
               .bold()
+              .foregroundColor(.white)
             
             Group {
               Text(viewModel.username)
@@ -42,6 +43,7 @@ struct TweetView: View {
             Text(viewModel.content)
               .multilineTextAlignment(.leading)
               .font(.callout)
+              .foregroundColor(.white)
             Spacer()
           }
           Spacer()

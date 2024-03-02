@@ -9,8 +9,12 @@ struct FeedView: View {
     NavigationStack {
       ScrollView {
         VStack {
-          ForEach(viewModel.tweetViewModels, id: \.self) { viewModel in
-            TweetView(viewModel: viewModel)
+          ForEach(viewModel.tweets, id: \.self) { tweet in
+            NavigationLink {
+              TweetDetailView(viewModel: viewModel.tweetDetailViewModel(for: tweet))
+            } label: {
+              TweetView(viewModel: viewModel.tweetViewModel(for: tweet))
+            }
           }
         }
       }

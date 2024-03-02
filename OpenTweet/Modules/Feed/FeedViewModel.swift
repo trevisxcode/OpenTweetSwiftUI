@@ -5,13 +5,18 @@ import Foundation
 extension FeedView {
   final class Model: ObservableObject {
     let service = TweetsService()
-    @Published private(set) var tweetViewModels = [TweetView.Model]()
+    @Published private(set) var tweets = [TweetDM]()
     
     func fetchTweet() {
-      let tweets = service.fetchTweets()
-      tweetViewModels = tweets.map {
-        TweetView.ModelMapper.map(entity: $0)
-      }
+      tweets = service.fetchTweets()
+    }
+    
+    func tweetViewModel(for tweet: TweetDM) -> TweetView.Model {
+      TweetView.ModelMapper.map(entity: tweet)
+    }
+    
+    func tweetDetailViewModel(for tweet: TweetDM) -> TweetDetailView.Model {
+      TweetDetailView.ModelMapper.map(entity: tweet)
     }
   }
 }
