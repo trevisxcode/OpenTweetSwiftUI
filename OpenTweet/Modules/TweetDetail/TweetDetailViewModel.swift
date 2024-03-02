@@ -13,9 +13,7 @@ extension TweetDetailView {
     let avatar: URL?
     let inReplyTo: String?
     let date: String
-//    @Published var replyTweets = [TweetView.Model]()
     @Published var replyTweets = [TweetDM]()
-
     
     init(
       id: String,
@@ -41,6 +39,10 @@ extension TweetDetailView {
     
     func tweetViewModel(for tweet: TweetDM) -> TweetView.Model {
       TweetView.ModelMapper.map(entity: tweet)
+    }
+    
+    func tweetDetailViewModel(for tweet: TweetDM) -> TweetDetailView.Model {
+      TweetDetailView.ModelMapper.map(entity: tweet)
     }
     
     static let `default` = Model(

@@ -10,9 +10,12 @@ struct TweetDetailView: View {
       ScrollView {
         VStack {
           headerView
-          
           ForEach(viewModel.replyTweets, id: \.self) { tweet in
-            TweetView(viewModel: viewModel.tweetViewModel(for: tweet))
+            NavigationLink {
+              TweetDetailView(viewModel: viewModel.tweetDetailViewModel(for: tweet))
+            } label: {
+              TweetView(viewModel: viewModel.tweetViewModel(for: tweet))
+            }
           }
         }
       }
