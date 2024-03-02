@@ -7,10 +7,10 @@ extension TweetView {
     let id: String
     let profileName: String
     let username: String
-    let content: String
     let avatar: URL?
     let inReplyTo: String?
     let date: String
+    let tweetContentTextModel: TweetContentText.Model
     
     init(
       id: String,
@@ -24,17 +24,18 @@ extension TweetView {
       self.id = id
       self.profileName = profileName
       self.username = username
-      self.content = content
       self.avatar = avatar
       self.inReplyTo = inReplyTo
       self.date = date
+      self.tweetContentTextModel = TweetContentText.ModelMapper.map(text: content)
     }
+    
     
     static func == (lhs: Model, rhs: Model) -> Bool {
       lhs.id == rhs.id &&
       lhs.profileName == rhs.profileName &&
       lhs.username == rhs.username &&
-      lhs.content == rhs.content &&
+      lhs.tweetContentTextModel.text == rhs.tweetContentTextModel.text &&
       lhs.avatar == rhs.avatar &&
       lhs.inReplyTo == rhs.inReplyTo &&
       lhs.date == rhs.date
@@ -44,7 +45,7 @@ extension TweetView {
       hasher.combine(id)
       hasher.combine(profileName)
       hasher.combine(username)
-      hasher.combine(content)
+      hasher.combine(tweetContentTextModel.text)
       hasher.combine(avatar)
       hasher.combine(inReplyTo)
       hasher.combine(date)

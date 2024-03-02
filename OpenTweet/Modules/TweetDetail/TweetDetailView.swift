@@ -16,6 +16,7 @@ struct TweetDetailView: View {
             } label: {
               TweetView(viewModel: viewModel.tweetViewModel(for: tweet))
             }
+            .buttonStyle(ScaledButtonStyle())
           }
         }
       }

@@ -15,6 +15,7 @@ struct FeedView: View {
             } label: {
               TweetView(viewModel: viewModel.tweetViewModel(for: tweet))
             }
+            .buttonStyle(ScaledButtonStyle())
           }
         }
       }

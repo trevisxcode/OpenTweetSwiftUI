@@ -10,7 +10,7 @@ struct TweetNetworkToDomainMapper {
       content: tweet.content,
       avatar: tweet.avatar,
       inReplyTo: tweet.inReplyTo,
-      date: ISO8601DateFormatter().date(from: tweet.date) ?? Date() // formatDate(date: tweet.date)
+      date: ISO8601DateFormatter().date(from: tweet.date) ?? Date()
     )
   }
 

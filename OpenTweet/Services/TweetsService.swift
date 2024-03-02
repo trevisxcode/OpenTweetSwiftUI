@@ -14,6 +14,6 @@ final class TweetsService {
   func fetchTweets(for inReplyTo: String) -> [TweetDM] {
     repository.fetchTweets(for: inReplyTo).map {
       TweetNetworkToDomainMapper.map(entity: $0)
-    }
+    }.sorted { $0.date > $1.date }
   }
 }

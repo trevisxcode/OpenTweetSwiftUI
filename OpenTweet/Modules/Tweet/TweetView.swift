@@ -38,7 +38,7 @@ struct TweetView: View {
             Spacer()
           }
           HStack(spacing: .zero) {
-            Text(viewModel.content)
+            TweetContentText(viewModel: viewModel.tweetContentTextModel)
               .multilineTextAlignment(.leading)
               .font(.callout)
               .foregroundColor(.white)
